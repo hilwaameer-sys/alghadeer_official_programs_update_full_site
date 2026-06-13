@@ -1,0 +1,23 @@
+تقرير فحص كاردز الموقع
+
+قبل الإصلاح:
+- index.html: {'pcards': 3, 'pcards_without_img': 3, 'card_icons_empty': 3, 'svg': 0, 'old_logo': 0}
+- about.html: {'pcards': 0, 'pcards_without_img': 0, 'card_icons_empty': 7, 'svg': 0, 'old_logo': 0}
+- rooh-elbeit.html: {'pcards': 0, 'pcards_without_img': 0, 'card_icons_empty': 0, 'svg': 0, 'old_logo': 0}
+- be-to.html: {'pcards': 0, 'pcards_without_img': 0, 'card_icons_empty': 0, 'svg': 0, 'old_logo': 0}
+- early-childhood.html: {'pcards': 0, 'pcards_without_img': 0, 'card_icons_empty': 3, 'svg': 0, 'old_logo': 0}
+- workshops.html: {'pcards': 5, 'pcards_without_img': 5, 'card_icons_empty': 0, 'svg': 0, 'old_logo': 0}
+- programs.html: {'pcards': 12, 'pcards_without_img': 0, 'card_icons_empty': 0, 'svg': 0, 'old_logo': 0}
+- program-details.html: {'pcards': 0, 'pcards_without_img': 0, 'card_icons_empty': 0, 'svg': 0, 'old_logo': 0}
+- contact.html: {'pcards': 0, 'pcards_without_img': 0, 'card_icons_empty': 3, 'svg': 0, 'old_logo': 0}
+
+بعد الإصلاح:
+- index.html: {'pcards': 3, 'pcards_without_img': 0, 'card_icons_empty': 0, 'svg': 0, 'old_logo': 0}
+- about.html: {'pcards': 0, 'pcards_without_img': 0, 'card_icons_empty': 0, 'svg': 0, 'old_logo': 0}
+- rooh-elbeit.html: {'pcards': 0, 'pcards_without_img': 0, 'card_icons_empty': 0, 'svg': 0, 'old_logo': 0}
+- be-to.html: {'pcards': 0, 'pcards_without_img': 0, 'card_icons_empty': 0, 'svg': 0, 'old_logo': 0}
+- early-childhood.html: {'pcards': 0, 'pcards_without_img': 0, 'card_icons_empty': 0, 'svg': 0, 'old_logo': 0}
+- workshops.html: {'pcards': 5, 'pcards_without_img': 0, 'card_icons_empty': 0, 'svg': 0, 'old_logo': 0}
+- programs.html: {'pcards': 12, 'pcards_without_img': 0, 'card_icons_empty': 0, 'svg': 0, 'old_logo': 0}
+- program-details.html: {'pcards': 0, 'pcards_without_img': 0, 'card_icons_empty': 0, 'svg': 0, 'old_logo': 0}
+- contact.html: {'pcards': 0, 'pcards_without_img': 0, 'card_icons_empty': 0, 'svg': 0, 'old_logo': 0}
