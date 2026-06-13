@@ -518,63 +518,6 @@ footer .brand img,
     background-image:linear-gradient(180deg,rgba(246,239,225,.94),rgba(246,239,225,.78)), var(--hero-photo);
   }
 }
-
-
-/* ===== Official PDF content + uploaded image update ===== */
-.brand img,.brand-logo,img.logo{
-  width:auto;
-  height:70px;
-  object-fit:contain;
-  display:block;
-}
-.site-footer .brand img{ height:88px; }
-.pcard .top.image-top{ background:#f3ead9; }
-.pcard .top.image-top img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-  transition:transform .45s ease;
-}
-.pcard:hover .top.image-top img{ transform:scale(1.06); }
-.pcard .top.image-top::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(180deg,rgba(30,80,72,0) 46%,rgba(30,80,72,.18));
-  pointer-events:none;
-}
-.pcard .top.image-top .tag{ z-index:2; }
-.official-section-title{
-  max-width:850px;
-  margin-bottom:2rem;
-}
-.official-note{
-  background:rgba(127,169,155,.14);
-  border:1px solid rgba(127,169,155,.22);
-  border-radius:var(--r-lg);
-  padding:1rem 1.2rem;
-  margin:1.2rem 0 2rem;
-  color:var(--ink-soft);
-}
-.hero.has-photo,.page-hero.has-photo{ position:relative; overflow:hidden; }
-.hero.has-photo::before,.page-hero.has-photo::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background-image:linear-gradient(90deg,rgba(246,239,225,.95),rgba(246,239,225,.78),rgba(246,239,225,.38)), var(--hero-photo);
-  background-size:cover;
-  background-position:center;
-  z-index:0;
-}
-.hero.has-photo > *,.page-hero.has-photo > *{ position:relative; z-index:1; }
-@media(max-width:760px){
-  .brand img,.brand-logo,img.logo{ height:56px; }
-  .site-footer .brand img{ height:72px; }
-  .hero.has-photo::before,.page-hero.has-photo::before{
-    background-image:linear-gradient(180deg,rgba(246,239,225,.96),rgba(246,239,225,.82)), var(--hero-photo);
-  }
-}
 </style>
 <link href="assets/images/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/><link href="assets/images/favicon-192.png" rel="icon" sizes="192x192" type="image/png"/><link href="assets/images/favicon-180.png" rel="apple-touch-icon" sizes="180x180"/><link href="assets/images/favicon.ico" rel="shortcut icon"/></head>
 <body>
@@ -582,7 +525,7 @@ footer .brand img,
 <div class="wrap">
 <nav aria-label="التنقل الرئيسي" class="nav">
 <a aria-label="أكاديمية الغدير — الرئيسية" class="brand" href="index.html">
-<img alt="أكاديمية الغدير للإرشاد والتطوير" class="brand-logo logo" src="assets/images/logo.png"/>
+<img alt="أكاديمية الغدير للإرشاد والتطوير" class="logo brand-logo" src="assets/images/logo.png"/>
 </a>
 <ul class="nav-links">
 <li><a data-nav="index.html" href="index.html">الرئيسية</a></li>
@@ -609,7 +552,7 @@ footer .brand img,
 </div>
 </div>
 </header>
-<section class="page-hero has-photo" style="--hero-photo:url('assets/images/programs/academy-overview.jpg'); ">
+<section class="page-hero has-photo" style="--hero-photo:url('assets/images/hero/contact-hero.jpg'); ">
 <div class="wrap" style="position:relative;z-index:2">
 <p class="crumb reveal">الرئيسية / تواصل معنا</p>
 <h1 class="reveal">نسمعك… ونسعد بالتواصل معك</h1>
@@ -626,7 +569,7 @@ footer .brand img,
 </div>
 <div class="info-card" style="margin-bottom:1rem">
 <div class="ic" data-icon="✦"></div>
-<div><h4>موقعنا</h4><p>كفر عقب — حي زغير، قرب مصلحة المياه / مقابل مكتبة الطوري.</p></div>
+<div><h4>موقعنا</h4><p>كفر عقب — الشارع الرئيسي بجانب مصلحة المياه / أكاديمية الغدير للإرشاد والتطوير.</p></div>
 </div>
 <div class="info-card">
 <div class="ic" data-icon="☘"></div>
@@ -649,7 +592,7 @@ footer .brand img,
 <option>ورشات العطل</option>
 <option>جلسة إرشاد فردي</option>
 <option>جلسة إرشاد زوجي</option>
-<option>استفسار عام</option>
+<option>استفسار عام</option><option>دورة الألعاب النفسية</option><option>صناعة القادة</option><option>بيلاتس للسيدات</option><option>على باب حياة جديدة</option><option>الورشات الأسبوعية</option><option>إرشاد سلوك الطفل أو المراهق</option><option>الورشات التفريغية</option><option>الورشات الوالدية الجماعية</option>
 </select>
 </div>
 <div class="field"><label for="cf-msg">رسالتك</label><textarea id="cf-msg" name="msg" placeholder="اكتب تفاصيل استفسارك هنا..."></textarea></div>
@@ -676,7 +619,7 @@ footer .brand img,
 <div class="foot-grid">
 <div>
 <a class="brand" href="index.html">
-<img alt="أكاديمية الغدير للإرشاد والتطوير" class="brand-logo logo" src="assets/images/logo.png"/>
+<img alt="أكاديمية الغدير للإرشاد والتطوير" class="logo brand-logo" src="assets/images/logo.png"/>
 </a>
 <p style="margin-top:1rem;max-width:34ch">مساحة واعية تجمع بين المعرفة، المهارة، والدعم الإنساني لصناعة جيل واثق ومتوازن في فلسطين.</p>
 </div>

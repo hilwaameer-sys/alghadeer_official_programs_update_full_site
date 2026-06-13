@@ -518,63 +518,6 @@ footer .brand img,
     background-image:linear-gradient(180deg,rgba(246,239,225,.94),rgba(246,239,225,.78)), var(--hero-photo);
   }
 }
-
-
-/* ===== Official PDF content + uploaded image update ===== */
-.brand img,.brand-logo,img.logo{
-  width:auto;
-  height:70px;
-  object-fit:contain;
-  display:block;
-}
-.site-footer .brand img{ height:88px; }
-.pcard .top.image-top{ background:#f3ead9; }
-.pcard .top.image-top img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-  transition:transform .45s ease;
-}
-.pcard:hover .top.image-top img{ transform:scale(1.06); }
-.pcard .top.image-top::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(180deg,rgba(30,80,72,0) 46%,rgba(30,80,72,.18));
-  pointer-events:none;
-}
-.pcard .top.image-top .tag{ z-index:2; }
-.official-section-title{
-  max-width:850px;
-  margin-bottom:2rem;
-}
-.official-note{
-  background:rgba(127,169,155,.14);
-  border:1px solid rgba(127,169,155,.22);
-  border-radius:var(--r-lg);
-  padding:1rem 1.2rem;
-  margin:1.2rem 0 2rem;
-  color:var(--ink-soft);
-}
-.hero.has-photo,.page-hero.has-photo{ position:relative; overflow:hidden; }
-.hero.has-photo::before,.page-hero.has-photo::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background-image:linear-gradient(90deg,rgba(246,239,225,.95),rgba(246,239,225,.78),rgba(246,239,225,.38)), var(--hero-photo);
-  background-size:cover;
-  background-position:center;
-  z-index:0;
-}
-.hero.has-photo > *,.page-hero.has-photo > *{ position:relative; z-index:1; }
-@media(max-width:760px){
-  .brand img,.brand-logo,img.logo{ height:56px; }
-  .site-footer .brand img{ height:72px; }
-  .hero.has-photo::before,.page-hero.has-photo::before{
-    background-image:linear-gradient(180deg,rgba(246,239,225,.96),rgba(246,239,225,.82)), var(--hero-photo);
-  }
-}
 </style>
 <link href="assets/images/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/><link href="assets/images/favicon-192.png" rel="icon" sizes="192x192" type="image/png"/><link href="assets/images/favicon-180.png" rel="apple-touch-icon" sizes="180x180"/><link href="assets/images/favicon.ico" rel="shortcut icon"/></head>
 <body>
@@ -582,7 +525,7 @@ footer .brand img,
 <div class="wrap">
 <nav aria-label="التنقل الرئيسي" class="nav">
 <a aria-label="أكاديمية الغدير — الرئيسية" class="brand" href="index.html">
-<img alt="أكاديمية الغدير للإرشاد والتطوير" class="brand-logo logo" src="assets/images/logo.png"/>
+<img alt="أكاديمية الغدير للإرشاد والتطوير" class="logo brand-logo" src="assets/images/logo.png"/>
 </a>
 <ul class="nav-links">
 <li><a data-nav="index.html" href="index.html">الرئيسية</a></li>
@@ -609,7 +552,7 @@ footer .brand img,
 </div>
 </div>
 </header>
-<section class="page-hero has-photo" style="--hero-photo:url('assets/images/programs/academy-overview.jpg'); ">
+<section class="page-hero has-photo" style="--hero-photo:url('assets/images/hero/workshops-hero.jpg'); ">
 <div class="wrap" style="position:relative;z-index:2">
 <p class="crumb reveal">الرئيسية / ورشات العطل</p>
 <h1 class="reveal">ورشات العطل</h1>
@@ -621,7 +564,7 @@ footer .brand img,
 <div class="section-head reveal"><span class="eyebrow">للأطفال</span><h2>ورشٌ مرحة للأطفال</h2>
 <p>أنشطة إبداعية وحركية تنمّي مهارات الطفل وتفجّر طاقته في أجواء مليئة بالمرح والأمان.</p></div>
 <div class="grid g-2"><article class="pcard reveal">
-<div class="top image-top"><img alt="فنون" loading="lazy" src="assets/images/cards/creative-workshop.jpg"/><span class="tag">فنون</span></div>
+<div class="top image-top"><img alt="فنون" loading="lazy" src="assets/images/updates/course-rooh-elbeit.jpg"/><span class="tag">فنون</span></div>
 <div class="body"><h3>ورش فنية وإبداعية</h3><p>رسم، تلوين، وأشغال يدوية تنمّي الخيال والمهارات الدقيقة لدى الطفل.</p></div></article><article class="pcard reveal d1">
 <div class="top image-top"><img alt="حركة ولعب" loading="lazy" src="assets/images/cards/movement-play.jpg"/><span class="tag">حركة ولعب</span></div>
 <div class="body"><h3>ورش حركية وألعاب</h3><p>فعاليات وألعاب جماعية تفرّغ الطاقة وتنمّي روح الفريق والتعاون.</p></div></article></div>
@@ -632,7 +575,7 @@ footer .brand img,
 <div class="section-head reveal"><span class="eyebrow">معاً</span><h2>ورش الأمّ والطفل</h2>
 <p>لحظات نوعية تقرّب القلوب وتبني الثقة بين الأم وطفلها من خلال أنشطة مشتركة هادفة.</p></div>
 <div class="grid g-3"><article class="pcard reveal">
-<div class="top image-top"><img alt="ترابط" loading="lazy" src="assets/images/cards/mother-child-bonding.jpg"/><span class="tag">ترابط</span></div>
+<div class="top image-top"><img alt="ترابط" loading="lazy" src="assets/images/updates/counseling-child-behavior.jpg"/><span class="tag">ترابط</span></div>
 <div class="body"><h3>بناء الترابط العاطفي</h3><p>أنشطة تعزّز التواصل والاحتواء بين الأم وطفلها.</p></div></article><article class="pcard reveal d1">
 <div class="top image-top"><img alt="لعب هادف" loading="lazy" src="assets/images/cards/purposeful-play.jpg"/><span class="tag">لعب هادف</span></div>
 <div class="body"><h3>اللعب الهادف</h3><p>ألعاب تعليمية مشتركة تدمج المتعة بالتعلّم.</p></div></article><article class="pcard reveal d2">
@@ -640,7 +583,26 @@ footer .brand img,
 <div class="body"><h3>التعبير عن المشاعر</h3><p>مساحة آمنة للتعبير وفهم مشاعر الطفل والأم معاً.</p></div></article></div>
 </div>
 </section>
-<section class="section bg-cream2"><div class="wrap"><div class="section-head center reveal"><span class="eyebrow">أجواء الورشات</span><h2>إبداع ومرح بأمان</h2></div><div class="photo-grid"><figure class="photo-card reveal"><img alt="ورش فنية وإبداعية للأطفال" loading="lazy" onerror="this.closest('.photo-card').style.display='none'" src="assets/uploads/2025/12/لقطة-شاشة-2025-12-09-001706.png"/><figcaption>ورش فنية وإبداعية للأطفال</figcaption></figure><figure class="photo-card reveal"><img alt="ألعاب حركية وأنشطة جماعية" loading="lazy" onerror="this.closest('.photo-card').style.display='none'" src="assets/uploads/2025/12/لقطة-شاشة-2025-12-08-001809.png"/><figcaption>ألعاب حركية وأنشطة جماعية</figcaption></figure><figure class="photo-card reveal"><img alt="لحظات من ورشات الغدير" loading="lazy" onerror="this.closest('.photo-card').style.display='none'" src="assets/uploads/2025/12/37da1241-6ab5-4c15-8fb8-60e4d60d7e78-1-1024x689.jpeg"/><figcaption>لحظات من ورشات الغدير</figcaption></figure></div></div></section>
+
+<section class="section" id="weekly-workshops">
+<div class="wrap">
+<div class="section-head center reveal">
+<span class="eyebrow">ورشات أسبوعية</span>
+<h2>ورشات متجددة على مدار الأسبوع</h2>
+<p>حسب الملف: الأحد ورشات موسيقية، الاثنين ورشات تفريغية أم وابن، والسبت ورشات توعوية زوجية.</p>
+</div>
+<div class="grid g-3">
+<article class="pcard reveal"><div class="top image-top"><img alt="ورشات موسيقية" loading="lazy" src="assets/images/updates/course-weekly-workshops.jpg"/><span class="tag">الأحد</span></div><div class="body"><h3>ورشات موسيقية</h3><p>جلسات إبداعية تستخدم الموسيقى كأداة للتعبير والتواصل والتجديد الداخلي.</p><div class="meta"><span>تعبير</span><span>تواصل</span><span>تجديد</span></div></div></article>
+<article class="pcard reveal d1"><div class="top image-top"><img alt="ورشات تفريغية أم وابن" loading="lazy" src="assets/images/updates/workshop-release.jpg"/><span class="tag">الاثنين</span></div><div class="body"><h3>ورشات تفريغية أم وابن</h3><p>جلسات مشتركة بين الأم وابنها لتعزيز التواصل العاطفي وتفريغ الضغوط اليومية.</p><div class="meta"><span>أم وابن</span><span>تفريغ</span><span>تواصل عاطفي</span></div></div></article>
+<article class="pcard reveal d2"><div class="top image-top"><img alt="ورشات توعوية زوجية" loading="lazy" src="assets/images/updates/counseling-marital.jpg"/><span class="tag">السبت</span></div><div class="body"><h3>ورشات توعوية زوجية</h3><p>ورشات تثقيفية حول العلاقات الزوجية الصحية وأدوات التواصل الفعّال بين الزوجين.</p><div class="meta"><span>زواج</span><span>تواصل</span><span>وعي أسري</span></div></div></article>
+</div>
+</div>
+</section>
+<section class="section bg-cream2"><div class="wrap"><div class="section-head center reveal"><span class="eyebrow">أجواء الورشات</span><h2>إبداع ومرح بأمان</h2></div><div class="photo-grid"><figure class="photo-card reveal"><img alt="ورش فنية وإبداعية للأطفال" loading="lazy" onerror="this.closest('.photo-card').style.display='none'" src="assets/uploads/2025/12/لقطة-شاشة-2025-12-09-001706.png"/><figcaption>ورش فنية وإبداعية للأطفال</figcaption></figure><figure class="photo-card reveal"><img alt="ألعاب حركية وأنشطة جماعية" loading="lazy" onerror="this.closest('.photo-card').style.display='none'" src="assets/uploads/2025/12/لقطة-شاشة-2025-12-08-001809.png"/><figcaption>ألعاب حركية وأنشطة جماعية</figcaption></figure><figure class="photo-card reveal"><img alt="لحظات من ورشات الغدير" loading="lazy" onerror="this.closest('.photo-card').style.display='none'" src="assets/uploads/2025/12/37da1241-6ab5-4c15-8fb8-60e4d60d7e78-1-1024x689.jpeg"/><figcaption>لحظات من ورشات الغدير</figcaption></figure>
+<figure class="photo-card reveal"><img alt="الورشات التفريغية" loading="lazy" src="assets/images/updates/workshop-release.jpg"/><figcaption>الورشات التفريغية</figcaption></figure>
+<figure class="photo-card reveal"><img alt="الورشات الوالدية الجماعية" loading="lazy" src="assets/images/updates/workshop-parenting-group.jpg"/><figcaption>الورشات الوالدية الجماعية</figcaption></figure>
+<figure class="photo-card reveal"><img alt="جلسة إرشاد زوجي" loading="lazy" src="assets/images/updates/counseling-marital.jpg"/><figcaption>جلسة إرشاد زوجي</figcaption></figure>
+</div></div></section>
 <section class="section--tight">
 <div class="wrap">
 <div class="cta-band reveal">
@@ -655,7 +617,7 @@ footer .brand img,
 <div class="foot-grid">
 <div>
 <a class="brand" href="index.html">
-<img alt="أكاديمية الغدير للإرشاد والتطوير" class="brand-logo logo" src="assets/images/logo.png"/>
+<img alt="أكاديمية الغدير للإرشاد والتطوير" class="logo brand-logo" src="assets/images/logo.png"/>
 </a>
 <p style="margin-top:1rem;max-width:34ch">مساحة واعية تجمع بين المعرفة، المهارة، والدعم الإنساني لصناعة جيل واثق ومتوازن في فلسطين.</p>
 </div>

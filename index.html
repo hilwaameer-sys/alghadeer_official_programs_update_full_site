@@ -518,63 +518,6 @@ footer .brand img,
     background-image:linear-gradient(180deg,rgba(246,239,225,.94),rgba(246,239,225,.78)), var(--hero-photo);
   }
 }
-
-
-/* ===== Official PDF content + uploaded image update ===== */
-.brand img,.brand-logo,img.logo{
-  width:auto;
-  height:70px;
-  object-fit:contain;
-  display:block;
-}
-.site-footer .brand img{ height:88px; }
-.pcard .top.image-top{ background:#f3ead9; }
-.pcard .top.image-top img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-  transition:transform .45s ease;
-}
-.pcard:hover .top.image-top img{ transform:scale(1.06); }
-.pcard .top.image-top::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(180deg,rgba(30,80,72,0) 46%,rgba(30,80,72,.18));
-  pointer-events:none;
-}
-.pcard .top.image-top .tag{ z-index:2; }
-.official-section-title{
-  max-width:850px;
-  margin-bottom:2rem;
-}
-.official-note{
-  background:rgba(127,169,155,.14);
-  border:1px solid rgba(127,169,155,.22);
-  border-radius:var(--r-lg);
-  padding:1rem 1.2rem;
-  margin:1.2rem 0 2rem;
-  color:var(--ink-soft);
-}
-.hero.has-photo,.page-hero.has-photo{ position:relative; overflow:hidden; }
-.hero.has-photo::before,.page-hero.has-photo::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background-image:linear-gradient(90deg,rgba(246,239,225,.95),rgba(246,239,225,.78),rgba(246,239,225,.38)), var(--hero-photo);
-  background-size:cover;
-  background-position:center;
-  z-index:0;
-}
-.hero.has-photo > *,.page-hero.has-photo > *{ position:relative; z-index:1; }
-@media(max-width:760px){
-  .brand img,.brand-logo,img.logo{ height:56px; }
-  .site-footer .brand img{ height:72px; }
-  .hero.has-photo::before,.page-hero.has-photo::before{
-    background-image:linear-gradient(180deg,rgba(246,239,225,.96),rgba(246,239,225,.82)), var(--hero-photo);
-  }
-}
 </style>
 <link href="assets/images/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/><link href="assets/images/favicon-192.png" rel="icon" sizes="192x192" type="image/png"/><link href="assets/images/favicon-180.png" rel="apple-touch-icon" sizes="180x180"/><link href="assets/images/favicon.ico" rel="shortcut icon"/></head>
 <body>
@@ -583,7 +526,7 @@ footer .brand img,
 <div class="wrap">
 <nav aria-label="التنقل الرئيسي" class="nav">
 <a aria-label="أكاديمية الغدير — الرئيسية" class="brand" href="index.html">
-<img alt="أكاديمية الغدير للإرشاد والتطوير" class="brand-logo logo" src="assets/images/logo.png"/>
+<img alt="أكاديمية الغدير للإرشاد والتطوير" class="logo brand-logo" src="assets/images/logo.png"/>
 </a>
 <ul class="nav-links">
 <li><a data-nav="index.html" href="index.html">الرئيسية</a></li>
@@ -611,7 +554,7 @@ footer .brand img,
 </div>
 </header>
 <!-- ===== Hero ===== -->
-<section class="hero has-photo" style="--hero-photo:url('assets/images/programs/academy-overview.jpg'); ">
+<section class="hero has-photo" style="--hero-photo:url('assets/images/hero/home-hero.jpg'); ">
 <div class="wrap">
 <div class="hero-inner">
 <div class="hero-copy reveal">
@@ -698,7 +641,7 @@ footer .brand img,
 </div>
 <div class="grid g-3">
 <article class="pcard reveal">
-<div class="top image-top"><img alt="للأمهات" loading="lazy" src="assets/images/cards/creative-workshop.jpg"/><span class="tag">للأمهات</span></div>
+<div class="top image-top"><img alt="للأمهات" loading="lazy" src="assets/images/updates/course-rooh-elbeit.jpg"/><span class="tag">للأمهات</span></div>
 <div class="body">
 <h3>برنامج روح البيت</h3>
 <p>قوة الأمّ هي بداية قوة الأسرة. عشر محطات تمنحك أسرار التربية الإيجابية وفنون الاحتواء والتواصل مع أطفالك ومراهقيك.</p>
@@ -714,7 +657,7 @@ footer .brand img,
 </div>
 </article>
 <article class="pcard reveal d2">
-<div class="top image-top"><img alt="إرشاد أهالي" loading="lazy" src="assets/images/cards/mother-child-bonding.jpg"/><span class="tag">إرشاد أهالي</span></div>
+<div class="top image-top"><img alt="إرشاد أهالي" loading="lazy" src="assets/images/updates/counseling-child-behavior.jpg"/><span class="tag">إرشاد أهالي</span></div>
 <div class="body">
 <h3>إرشاد أهالي طفولة مبكرة</h3>
 <p>اكتساب مهارات الوالدية، ووضع الأهداف، ورفع الوعي بالتواصل العاطفي وأهميته للطفل، وبناء الحدود الصحية في التعامل.</p>
@@ -727,6 +670,42 @@ footer .brand img,
 </div>
 </div>
 </section>
+<section class="section bg-cream2" id="current-courses">
+<div class="wrap">
+<div class="section-head center reveal">
+<span class="eyebrow">دورات وبرامج جديدة</span>
+<h2>الدورات الحالية في أكاديمية الغدير</h2>
+<p>تمت إضافة الدورات والمواعيد الجديدة كما وردت في الملف المرفق، مع توضيح الفئة، المدة، التكلفة، والمواعيد حتى يسهل على الزائر اختيار البرنامج المناسب.</p>
+</div>
+<div class="grid g-3">
+<article class="pcard reveal">
+<div class="top image-top"><img alt="دورة الألعاب النفسية للسيدات" loading="lazy" src="assets/images/updates/course-psychological-games.jpg"/><span class="tag">للسيدات</span></div>
+<div class="body"><h3>دورة الألعاب النفسية</h3><p>مساحة آمنة لفهم الذات، زيادة الوعي الداخلي، والتعامل مع الزوج والمحيطين بهدوء وثقة.</p><div class="meta"><span>10 لقاءات</span><span>800 شيكل</span><span>القدس / كفر عقب</span></div><a class="more" href="contact.html">للتسجيل ←</a></div>
+</article>
+<article class="pcard reveal d1">
+<div class="top image-top"><img alt="صناعة القادة للمراهقين" loading="lazy" src="assets/images/updates/course-leaders.jpg"/><span class="tag">10–16 سنة</span></div>
+<div class="body"><h3>صناعة القادة</h3><p>برنامج يساعد المراهقين على اكتشاف الذات، بناء الثقة، وتعلم مهارات التواصل والقيادة.</p><div class="meta"><span>6 لقاءات</span><span>300 شيكل</span><span>السبت 4:00–6:00</span></div><a class="more" href="contact.html">للتسجيل ←</a></div>
+</article>
+<article class="pcard reveal d2">
+<div class="top image-top"><img alt="بيلاتس للسيدات" loading="lazy" src="assets/images/updates/course-pilates.jpg"/><span class="tag">عرض خاص</span></div>
+<div class="body"><h3>بيلاتس للسيدات</h3><p>جلسات هادئة لتحسين مرونة الجسم، تقليل التوتر العضلي، واستعادة التوازن الجسدي والنفسي.</p><div class="meta"><span>4 لقاءات شهرياً</span><span>200 شيكل / شهر</span><span>الخميس 10:30–11:30</span></div><a class="more" href="contact.html">للتسجيل ←</a></div>
+</article>
+<article class="pcard reveal">
+<div class="top image-top"><img alt="على باب حياة جديدة للمقبلين على الزواج" loading="lazy" src="assets/images/updates/course-pre-marriage.jpg"/><span class="tag">للمقبلين على الزواج</span></div>
+<div class="body"><h3>على باب حياة جديدة</h3><p>دورة تمنح الخطيبين أدوات واقعية لبناء تواصل صحي ودخول الحياة الزوجية بثقة وطمأنينة.</p><div class="meta"><span>8 لقاءات</span><span>550 شيكل</span><span>الخميس 2:00–4:00</span></div><a class="more" href="contact.html">للتسجيل ←</a></div>
+</article>
+<article class="pcard reveal d1">
+<div class="top image-top"><img alt="روح البيت للأمهات" loading="lazy" src="assets/images/updates/course-rooh-elbeit.jpg"/><span class="tag">للأمهات</span></div>
+<div class="body"><h3>روح البيت</h3><p>دورة تساعد الأم على فهم احتياجات أبنائها وامتلاك أساليب تربوية واعية تبني بيتاً آمناً ومحباً.</p><div class="meta"><span>8 لقاءات</span><span>550 شيكل</span><span>عند اكتمال العدد</span></div><a class="more" href="rooh-elbeit.html">قراءة التفاصيل ←</a></div>
+</article>
+<article class="pcard reveal d2">
+<div class="top image-top"><img alt="الورشات الأسبوعية" loading="lazy" src="assets/images/updates/course-weekly-workshops.jpg"/><span class="tag">ورشات أسبوعية</span></div>
+<div class="body"><h3>الورشات الأسبوعية</h3><p>ورش موسيقية، تفريغية أم وابن، وتوعوية زوجية على مدار الأسبوع لتجديد الطاقة وتعزيز التواصل.</p><div class="meta"><span>الأحد موسيقى</span><span>الاثنين أم وابن</span><span>السبت زوجية</span></div><a class="more" href="workshops.html">مشاهدة الورشات ←</a></div>
+</article>
+</div>
+</div>
+</section>
+
 <!-- ===== Counseling ===== -->
 <section class="section dark-band">
 <div class="wrap">
@@ -749,6 +728,24 @@ footer .brand img,
 </div>
 </div>
 </section>
+<section class="section" id="counseling-services">
+<div class="wrap">
+<div class="section-head center reveal">
+<span class="eyebrow">جلسات الإرشاد</span>
+<h2>خدمات إرشادية حسب احتياج الأسرة</h2>
+<p>أضفنا الصور الجديدة للخدمات المطلوبة: الإرشاد الزوجي، الجلسات الفردية والوعي الذاتي، إرشاد سلوك الطفل أو المراهق، والورشات الجماعية.</p>
+</div>
+<div class="grid g-3">
+<article class="pcard reveal"><div class="top image-top"><img alt="الإرشاد الزوجي" loading="lazy" src="assets/images/updates/counseling-marital.jpg"/><span class="tag">إرشاد أسري وزوجي</span></div><div class="body"><h3>الإرشاد الزوجي</h3><p>جلسات تساعد الزوجين على تحسين الحوار، فهم الاحتياجات، وحل الخلافات بطريقة هادئة وصحية.</p><div class="meta"><span>حوار</span><span>تفاهم</span><span>علاقة صحية</span></div><a class="more" href="contact.html">احجز جلسة ←</a></div></article>
+<article class="pcard reveal d1"><div class="top image-top"><img alt="الجلسات الفردية والوعي الذاتي" loading="lazy" src="assets/images/updates/counseling-individual-awareness.jpg"/><span class="tag">جلسات فردية</span></div><div class="body"><h3>الجلسات الفردية والوعي الذاتي</h3><p>مساحة آمنة لترتيب الأفكار، فهم المشاعر، وتعزيز الوعي الذاتي بخطوات واضحة ومطمئنة.</p><div class="meta"><span>وعي ذاتي</span><span>تنظيم أفكار</span><span>دعم نفسي</span></div><a class="more" href="contact.html">احجز جلسة ←</a></div></article>
+<article class="pcard reveal d2"><div class="top image-top"><img alt="إرشاد سلوك الطفل أو المراهق" loading="lazy" src="assets/images/updates/counseling-child-behavior.jpg"/><span class="tag">للأهالي</span></div><div class="body"><h3>إرشاد سلوك الطفل أو المراهق</h3><p>إرشاد للأهل لفهم سلوك الأبناء، التعامل مع التحديات اليومية، وبناء تواصل أكثر هدوءاً وثقة.</p><div class="meta"><span>طفل ومراهق</span><span>سلوك</span><span>مهارات والدية</span></div><a class="more" href="early-childhood.html">قراءة التفاصيل ←</a></div></article>
+<article class="pcard reveal"><div class="top image-top"><img alt="الورشات التفريغية" loading="lazy" src="assets/images/updates/workshop-release.jpg"/><span class="tag">ورشات تفريغية</span></div><div class="body"><h3>الورشات التفريغية</h3><p>لقاءات داعمة تساعد على تفريغ الضغوط، التعبير عن المشاعر، وتجديد الطاقة في بيئة آمنة.</p><div class="meta"><span>تفريغ</span><span>مشاعر</span><span>راحة نفسية</span></div><a class="more" href="workshops.html">مشاهدة الورشات ←</a></div></article>
+<article class="pcard reveal d1"><div class="top image-top"><img alt="الورشات الوالدية الجماعية" loading="lazy" src="assets/images/updates/workshop-parenting-group.jpg"/><span class="tag">ورشات والدية</span></div><div class="body"><h3>الورشات الوالدية الجماعية</h3><p>ورشات للأهالي حول مهارات الوالدية، التعامل مع الأبناء، وبناء علاقات أسرية متوازنة.</p><div class="meta"><span>أهالي</span><span>تربية واعية</span><span>تجربة جماعية</span></div><a class="more" href="workshops.html">مشاهدة الورشات ←</a></div></article>
+<article class="pcard reveal d2"><div class="top image-top"><img alt="الورشات الأسبوعية" loading="lazy" src="assets/images/updates/course-weekly-workshops.jpg"/><span class="tag">أسبوعية</span></div><div class="body"><h3>ورشات موسيقية وتوعوية</h3><p>ورشات أسبوعية متنوعة تشمل الموسيقى، أم وابن، والوعي الزوجي لتعزيز التواصل والتوازن.</p><div class="meta"><span>موسيقى</span><span>أم وابن</span><span>زوجية</span></div><a class="more" href="workshops.html">مشاهدة الورشات ←</a></div></article>
+</div>
+</div>
+</section>
+
 <!-- ===== 5 Steps ===== -->
 <section class="section">
 <div class="wrap">
@@ -787,7 +784,7 @@ footer .brand img,
 <div class="foot-grid">
 <div>
 <a class="brand" href="index.html">
-<img alt="أكاديمية الغدير للإرشاد والتطوير" class="brand-logo logo" src="assets/images/logo.png"/>
+<img alt="أكاديمية الغدير للإرشاد والتطوير" class="logo brand-logo" src="assets/images/logo.png"/>
 </a>
 <p style="margin-top:1rem;max-width:34ch">مساحة واعية تجمع بين المعرفة، المهارة، والدعم الإنساني لصناعة جيل واثق ومتوازن في فلسطين.</p>
 </div>
