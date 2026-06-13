@@ -512,6 +512,50 @@ footer .brand img,
     background-image:linear-gradient(180deg,rgba(246,239,225,.94),rgba(246,239,225,.78)), var(--hero-photo);
   }
 }
+
+/* ===== Card images absolute full-visibility patch ===== */
+.pcard .top.image-top{
+  aspect-ratio:auto !important;
+  min-height:auto !important;
+  display:block !important;
+  overflow:hidden !important;
+  padding:14px !important;
+}
+.pcard .top.image-top img{
+  width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  display:block !important;
+  margin:0 auto !important;
+  background:#fff !important;
+}
+.pcard .top.image-top::after{
+  display:none !important;
+}
+.photo-card{
+  overflow:hidden !important;
+}
+.photo-card img{
+  width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  display:block !important;
+  margin:0 auto !important;
+  background:#fff !important;
+}
+.photo-card figcaption{
+  position:static !important;
+  inset:auto !important;
+  background:none !important;
+  color:var(--text) !important;
+  padding:.85rem .95rem 1rem !important;
+}
 </style>
 <link href="assets/images/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/><link href="assets/images/favicon-192.png" rel="icon" sizes="192x192" type="image/png"/><link href="assets/images/favicon-180.png" rel="apple-touch-icon" sizes="180x180"/><link href="assets/images/favicon.ico" rel="shortcut icon"/></head>
 <body>
